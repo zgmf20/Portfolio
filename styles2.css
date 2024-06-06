@@ -1,0 +1,59 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+header .navbar-brand {
+    font-size: 1.5rem;
+}
+
+header .navbar-nav .nav-link {
+    color: #fff;
+}
+
+header .navbar-nav .nav-link:hover {
+    color: #f4f4f4;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h1, section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section#about {
+    background-color: #fff;
+}
+
+section#projects .card {
+    margin-bottom: 30px;
+}
+
+section#contact {
+    background-color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ccc;
+}
