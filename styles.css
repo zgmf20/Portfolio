@@ -1,11 +1,16 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
 }
 
 header {
-    background-color: #333;
+    background-color: #3498db;
     color: #fff;
 }
 
@@ -18,7 +23,7 @@ header .navbar-nav .nav-link {
 }
 
 header .navbar-nav .nav-link:hover {
-    color: #f4f4f4;
+    color: #e74c3c;
 }
 
 section {
@@ -36,6 +41,11 @@ section#about {
 
 section#projects .card {
     margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+section#projects .card:hover {
+    transform: scale(1.05);
 }
 
 section#contact {
@@ -56,4 +66,14 @@ footer a {
 
 footer a:hover {
     color: #ccc;
+}
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.fade-in.visible {
+    opacity: 1;
 }

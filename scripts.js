@@ -13,4 +13,15 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // 滾動淡入效果
+    const fadeInElements = document.querySelectorAll('.fade-in');
+    window.addEventListener('scroll', function() {
+        fadeInElements.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                element.classList.add('visible');
+            }
+        });
+    });
 });
